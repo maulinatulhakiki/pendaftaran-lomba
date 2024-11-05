@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Lomba Olahraga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Pendaftaran Peserta Lomba Olahraga</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Formulir Pendaftaran</h2>
+            <form id="registrationForm" action="#" method="POST">
+
+                <!-- Nama -->
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+
+                <!-- Tanggal Lahir -->
+                <div class="form-group">
+                    <label for="tanggal-lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                </div>
+
+                <!-- Jenis Kelamin (Radio Button) -->
+                <div class="form-group">
+                    <label>Jenis Kelamin:</label>
+                    <div class="jenis-kelamin">
+                        <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-Laki" required>
+                        <label for="laki-laki">Laki-Laki</label>
+                        <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+
+                <!-- Nomor Telepon -->
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" pattern="[0-9]+" required title="Hanya boleh berisi angka.">
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Cabang Olahraga -->
+                <div class="form-group">
+                    <label for="cabang-olahraga">Cabang Olahraga:</label>
+                    <select id="cabang-olahraga" name="cabang-olahraga" required>
+                        <option value="">Pilih cabang olahraga</option>
+                        <option value="sepak-bola">Sepak Bola</option>
+                        <option value="basket">Basket</option>
+                        <option value="voli">Voli</option>
+                        <option value="badminton">Badminton</option>
+                        <option value="voli">Catur</option>
+                        <option value="tenis">Tenis Meja</option>
+                        <option value="voli">Futsal</option>
+                    </select>
+                </div>
+
+                <!-- Alamat -->
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <input type="text" id="alamat" name="alamat" required>
+                </div>
+
+                <!-- Komentar atau Pesan -->
+                <div class="form-group">
+                    <label for="komentar">Komentar atau Pesan:</label>
+                    <textarea id="komentar" name="komentar" rows="4" placeholder="Tulis komentar atau pesan di sini..."></textarea>
+                </div>
+
+                <!-- Tombol Submit -->
+                <div class="form-group">
+                    <button type="submit">Daftar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; BY MAULINATUL HAKIKI</p>
+    </footer>
+</body>
+</html>
